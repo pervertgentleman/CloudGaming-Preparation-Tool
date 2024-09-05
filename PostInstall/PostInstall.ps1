@@ -756,7 +756,6 @@ Write-Host -foregroundcolor red "
 "   
 #PromptUserAutoLogon -DontPromptPasswordUpdateGPU:$DontPromptPasswordUpdateGPU
 $ScripttaskList = @(
-"setupEnvironment";
 "addRegItems";
 "create-directories";
 "disable-iesecurity";
@@ -771,19 +770,12 @@ $ScripttaskList = @(
 "enhance-pointer-precision";
 "enable-mousekeys";
 "set-time";
-"set-wallpaper";
-"Create-AutoShutdown-Shortcut";
-"Create-One-Hour-Warning-Shortcut";
 "disable-server-manager";
-"Install-Gaming-Apps";
 "disable-devices";
-"InstallParsecVDD";
 "Server2019Controller";
-"gpu-update-shortcut";
 "clean-up";
 "clean-up-recent";
-"provider-specific";
-"TeamMachineSetupScheduledTask"
+"provider-specific"
 )
 
 foreach ($func in $ScripttaskList) {
